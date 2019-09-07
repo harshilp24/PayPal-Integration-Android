@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.thetechroot.ujalapay">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_logo_5"
+        android:label="Ujala Advisor"
+        android:roundIcon="@mipmap/ic_launcher_logo_5_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".StartActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="Welcome Back"
+            android:parentActivityName=".StartActivity" />
+        <activity
+            android:name=".RegisterActivity"
+            android:label="Create Account"
+            android:parentActivityName=".StartActivity" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="My Account"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name="com.paytm.pgsdk.PaytmPGActivity"
+            android:configChanges="keyboardHidden|orientation|keyboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".checksum"
+            android:label="Redirecting..."
+            android:parentActivityName=".PayActivity" />
+        <activity
+            android:name=".PayActivity"
+            android:label="Pay"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".PhoneActivity" />
+        <activity
+            android:name=".ContactActivity"
+            android:label="Contact"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".BenifitsActivity"
+            android:label="About Ujala"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Saving"
+            android:label="@string/title_activity_saving"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DAILYDEPOSIT"
+            android:label="@string/title_activity_dailydeposit"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RECURRINGDEPOSIT"
+            android:label="@string/title_activity_recurringdeposit"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FIXEDDEPOSIT"
+            android:label="@string/title_activity_fixeddeposit"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Daily"
+            android:label="@string/title_activity_daily"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Recurring"
+            android:label="@string/title_activity_recurring"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Fix"
+            android:label="@string/title_activity_fix"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".About"
+            android:label="About App"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".SplashActivity" />
+        <activity
+            android:name=".NotificationActivity"
+            android:label="Notifications"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".UsersActivity"
+            android:label="Notifications"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".NotDetailActivity"
+            android:label="Notifications Details"
+            android:parentActivityName=".NotificationActivity" />
+        <activity
+            android:name=".PaypalActivity"
+            android:label="PayPal"
+            android:parentActivityName=".SelectionActivity" />
+        <activity
+            android:name=".SelectionActivity"
+            android:label="Payment"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".PaymentDetailsActivity"
+            android:label="Paymetn Details" />
+        <activity
+            android:name=".PaymentDetails"
+            android:label="Payment Details" />
+        <activity
+            android:name=".Client"
+            android:label="@string/title_activity_client"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".DownloadActivity" />
+        <activity android:name=".FormActivity" />
+        <activity android:name=".CalActivity"></activity>
+    </application>
+
+</manifest>
